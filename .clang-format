@@ -1,0 +1,206 @@
+Language: Cpp
+Standard: c++11
+UseTab: Never
+IndentWidth: 4
+TabWidth: 4
+
+AccessModifierOffset: -4
+AlignAfterOpenBracket: Align
+AlignArrayOfStructures: Left
+
+# AlignConsecutiveAssignments: # None Consecutive AcrossEmptyLines AcrossComments AcrossEmptyLinesAndComments
+# AlignConsecutiveMacros:
+# AlignConsecutiveBitFields: 
+# AlignConsecutiveDeclarations:
+# AlignConsecutiveShortCaseStatements:
+# AlignTrailingComments: 
+
+AlignOperands: true # DontAlign Align
+
+# AllowAllArgumentsOnNextLine: true
+# AllowAllConstructorInitializersOnNextLine: true
+
+AllowAllParametersOfDeclarationOnNextLine: true
+
+# AllowBreakBeforeNoexceptSpecifier: Never OnlyWithParen Always
+
+AllowShortBlocksOnASingleLine: Never # Empty Always
+AllowShortCaseLabelsOnASingleLine: false
+
+# AllowShortCompoundRequirementOnASingleLine: false
+
+AllowShortEnumsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None # InlineOnly Empty Inline All
+AllowShortIfStatementsOnASingleLine: Never # WithoutElse OnlyFirstIf AllIfsAndElse
+AllowShortLambdasOnASingleLine: None # Empty Inline All
+AllowShortLoopsOnASingleLine: false
+AlwaysBreakAfterDefinitionReturnType: None # All TopLevel
+AlwaysBreakAfterReturnType: None # All TopLevel AllDefinitions TopLevelDefinitions
+
+# AlwaysBreakBeforeMultilineStrings: false vs BreakStringLiterals -> change or remove one of them
+
+AlwaysBreakTemplateDeclarations: true
+
+BinPackArguments: true
+BinPackParameters: true
+BitFieldColonSpacing: After # Both None Before
+BraceWrapping:
+  AfterClass: true
+  AfterControlStatement: Always # Never MultiLine
+  AfterEnum: true
+  AfterFunction: true
+  AfterNamespace: true
+  # AfterObjCDeclaration: true
+  AfterStruct: true
+  AfterUnion: true
+  AfterExternBlock: true
+  BeforeCatch: true
+  BeforeElse: true
+  BeforeLambdaBody: true
+  BeforeWhile: false
+  IndentBraces: false
+  SplitEmptyFunction: true
+  SplitEmptyRecord: true
+  SplitEmptyNamespace: true
+
+# BracedInitializerIndentWidth: 2
+# BreakAdjacentStringLiterals: true
+# BreakAfterAttributes: Never # Always Leave
+# BreakArrays: true
+
+BreakBeforeBinaryOperators: None # NonAssignment All
+BreakBeforeBraces: Custom # Attach Linux Mozilla Stroustrup Allman Whitesmiths GNU WebKit
+
+# BreakBeforeConceptDeclarations: Allowed # Never Always
+# BreakBeforeInlineASMColon: OnlyMultiLine # Never Always
+
+BreakBeforeTernaryOperators: false
+BreakConstructorInitializers: AfterColon # BeforeColon BeforeComma
+BreakInheritanceList: BeforeColon # BeforeComma AfterColon AfterComma
+BreakStringLiterals: true
+ColumnLimit: 150
+
+# CommentPragmas: '^ IWYU pragma:'
+# CompactNamespaces: false
+
+ConstructorInitializerAllOnOneLineOrOnePerLine: true # deprecated use PackConstructorInitializers
+
+# ConstructorInitializerIndentWidth: -4
+
+ContinuationIndentWidth: 4
+Cpp11BracedListStyle: false
+DerivePointerAlignment: false
+DisableFormat: false
+
+# ExperimentalAutoDetectBinPacking: false
+
+EmptyLineAfterAccessModifier: Never # Always Leave
+EmptyLineBeforeAccessModifier: Never # Always Leave
+FixNamespaceComments: true
+
+# ForEachMacros: [ foreach, Q_FOREACH, BOOST_FOREACH ]
+# IfMacros: [ if, ifdef, ifndef ]
+
+IncludeBlocks: Regroup # Preserve Merge 
+
+# IncludeCategories:
+#   - Regex: '^<.*\.h>'
+#     Priority: 2
+#   - Regex: '^<.*'
+#     Priority: 1
+#   - Regex: '.*'
+#     Priority: 0
+
+# IncludeIsMainRegex: '([Mm]ain|[Tt]est)$'
+# IncludeIsMainSourceRegex: ''
+
+IndentAccessModifiers: false
+IndentCaseBlocks: false
+IndentCaseLabels: false
+
+# IndentExternBlock: AfterExternBlock # NoIndent Indent -> BraceWrapping.AfterExternBlock
+
+IndentGotoLabels: false
+IndentPPDirectives: None # AfterHash BeforeHash
+
+# IndentRequiresClause: false
+
+IndentWrappedFunctionNames: true
+
+# JavaScriptQuotes: Leave Single Double
+# JavaScriptWrapImports: true
+# InsertBraces: true -> safer to do manually
+
+InsertNewlineAtEndOfFile: true
+InsertTrailingCommas: None # Wrapped
+
+# IntegerLiteralSeperator:
+
+KeepEmptyLinesAtEOF: false
+KeepEmptyLinesAtTheStartOfBlocks: false
+
+# LambdaBodyIndentation: Signature OuterScope
+
+LineEnding: CRLF # LF DeriveLF DeriveCRLF
+MaxEmptyLinesToKeep: 1
+NamespaceIndentation: None # Inner All
+
+# ObjCBinPackProtocolList: Always # Never Auto
+# ObjCBlockIndentWidth: 2
+# ObjCSpaceAfterProperty: true
+# ObjCSpaceBeforeProtocolList: true
+
+# PPIndentWidth: 0 -> IndentPPDirectives: None
+
+PackConstructorInitializers: Never # BinPack CurrentLine NextLine NextLineOnly 
+
+### Penalties, used to make clang decide between two equally good formatting options, clang will choose the one with the lower penalty
+# PenaltyBreakAssignment: 0
+# PenaltyBreakBeforeFirstCallParameter: 0
+# PenaltyBreakComment: 0
+# PenaltyBreakFirstLessLess: 0
+# PenaltyBreakOpenParentheses: 0
+# PenaltyBreakScopeResolution: 0
+# PenaltyBreakString: 0
+# PenaltyBreakTemplateDeclaration: 0
+# PenaltyExcessCharacter: 0
+# PenaltyIndentedWhitespace: 0
+# PenaltyReturnTypeOnItsOwnLine: 0
+
+PointerAlignment: Left # Right Middle
+ReferenceAlignment: Pointer # Right Middle
+QualifierAlignment: Leave # Left Right Custom
+# QualifierOrder: [ 'static', 'const', 'constexpr', 'inline', 'type', 'friend', 'volatile', 'restrict' ] # 'type' must be in the list
+ReflowComments: true
+
+# RemoveBracesLLVM: true # -> not safe
+# RemoveParentheses: true # -> not safe
+# RemoveSemicolon: true # -> not safe
+# RequiresClausePosition: # OwnLine WithPreceding WithFollowing SingleLine
+# RequiresExpressionIndentation: # OuterScope Keyword
+
+SeparateDefinitionBlocks: Always # Never Leave
+ShortNamespaceLines: 0
+SortIncludes: CaseSensitive # CaseInsensitive Never
+SpaceAfterCStyleCast: false
+SpaceAfterLogicalNot: false
+SpaceAfterTemplateKeyword: false
+SpaceAroundPointerQualifiers: Default # Before After Both
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeCaseColon: true
+SpaceBeforeCpp11BracedList: true
+SpaceBeforeCtorInitializerColon: true
+SpaceBeforeInheritanceColon: true
+SpaceBeforeJsonColon: true
+SpaceBeforeParens: ControlStatements # Never ControlStatementsExceptControlMacros NonEmptyParentheses Always Custom
+# SpaceBeforeParensOptions # if custom
+SpaceBeforeRangeBasedForLoopColon: true
+SpaceBeforeSquareBrackets: false
+SpaceInEmptyParentheses: false
+SpacesBeforeTrailingComments: 3
+SpacesInAngles: false
+SpacesInCStyleCastParentheses: false # deprecated
+SpacesInConditionalStatement: false # deprecated
+SpacesInContainerLiterals: false
+SpacesInParentheses: false # deprecated
+SpacesInSquareBrackets: false
