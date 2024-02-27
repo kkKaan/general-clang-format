@@ -5,45 +5,71 @@ IndentWidth: 4
 TabWidth: 4
 
 AccessModifierOffset: -4
-AlignAfterOpenBracket: Align
+AlignAfterOpenBracket: Align # DontAlign AlwaysBreak BlockIndent
 AlignArrayOfStructures: Left
 
-# AlignConsecutiveAssignments: # None Consecutive AcrossEmptyLines AcrossComments AcrossEmptyLinesAndComments
-# AlignConsecutiveMacros:
-# AlignConsecutiveBitFields: 
-# AlignConsecutiveDeclarations:
-# AlignConsecutiveShortCaseStatements:
-# AlignTrailingComments: 
+# AlignConsecutiveAssignments: # None Consecutive AcrossEmptyLines AcrossComments AcrossEmptyLinesAndComments -> select one of them or use the options below
+#    Enabled: true
+#    AcrossEmptyLines: true
+#    AcrossComments: true
+#    AlignCompound: false
+#    PadOperators: false
 
-AlignOperands: true # DontAlign Align
+# AlignConsecutiveBitFields: 
+#    Enabled: true
+#    AcrossEmptyLines: true
+#    AcrossComments: false
+
+# AlignConsecutiveDeclarations:
+#    Enabled: true
+#    AcrossEmptyLines: true
+#    AcrossComments: false
+#    AlignFunctionPointers: false
+
+# AlignConsecutiveMacros:
+#    Enabled: true
+#    AcrossEmptyLines: true
+#    AcrossComments: false
+
+# AlignConsecutiveShortCaseStatements:
+#    Enabled: true
+#    AcrossEmptyLines: true
+#    AcrossComments: false
+#    AlignCaseColons: false
+
+# AlignEscapedNewlines: DontAlign # Left Right
+AlignOperands: Align # DontAlign AlignAfterOperator
+
+# AlignTrailingComments: 
+#    Kind: Always Never Leave
+#    OverEmptyLines: 2
 
 # AllowAllArgumentsOnNextLine: true
-# AllowAllConstructorInitializersOnNextLine: true
+# AllowAllConstructorInitializersOnNextLine: true # deprecated, use PackConstructorInitializers
 
 AllowAllParametersOfDeclarationOnNextLine: true
 
 # AllowBreakBeforeNoexceptSpecifier: Never OnlyWithParen Always
 
+## Short definitions on single line
 AllowShortBlocksOnASingleLine: Never # Empty Always
 AllowShortCaseLabelsOnASingleLine: false
-
 # AllowShortCompoundRequirementOnASingleLine: false
-
 AllowShortEnumsOnASingleLine: false
 AllowShortFunctionsOnASingleLine: None # InlineOnly Empty Inline All
 AllowShortIfStatementsOnASingleLine: Never # WithoutElse OnlyFirstIf AllIfsAndElse
 AllowShortLambdasOnASingleLine: None # Empty Inline All
 AllowShortLoopsOnASingleLine: false
+
 AlwaysBreakAfterDefinitionReturnType: None # All TopLevel
 AlwaysBreakAfterReturnType: None # All TopLevel AllDefinitions TopLevelDefinitions
-
 # AlwaysBreakBeforeMultilineStrings: false vs BreakStringLiterals -> change or remove one of them
-
 AlwaysBreakTemplateDeclarations: true
 
 BinPackArguments: true
 BinPackParameters: true
 BitFieldColonSpacing: After # Both None Before
+
 BraceWrapping:
   AfterClass: true
   AfterControlStatement: Always # Never MultiLine
@@ -70,11 +96,10 @@ BraceWrapping:
 
 BreakBeforeBinaryOperators: None # NonAssignment All
 BreakBeforeBraces: Custom # Attach Linux Mozilla Stroustrup Allman Whitesmiths GNU WebKit
-
 # BreakBeforeConceptDeclarations: Allowed # Never Always
 # BreakBeforeInlineASMColon: OnlyMultiLine # Never Always
-
 BreakBeforeTernaryOperators: false
+
 BreakConstructorInitializers: AfterColon # BeforeColon BeforeComma
 BreakInheritanceList: BeforeColon # BeforeComma AfterColon AfterComma
 BreakStringLiterals: true
@@ -84,7 +109,6 @@ ColumnLimit: 150
 # CompactNamespaces: false
 
 ConstructorInitializerAllOnOneLineOrOnePerLine: true # deprecated use PackConstructorInitializers
-
 # ConstructorInitializerIndentWidth: -4
 
 ContinuationIndentWidth: 4
@@ -96,6 +120,7 @@ DisableFormat: false
 
 EmptyLineAfterAccessModifier: Never # Always Leave
 EmptyLineBeforeAccessModifier: Never # Always Leave
+
 FixNamespaceComments: true
 
 # ForEachMacros: [ foreach, Q_FOREACH, BOOST_FOREACH ]
@@ -117,20 +142,16 @@ IncludeBlocks: Regroup # Preserve Merge
 IndentAccessModifiers: false
 IndentCaseBlocks: false
 IndentCaseLabels: false
-
 # IndentExternBlock: AfterExternBlock # NoIndent Indent -> BraceWrapping.AfterExternBlock
-
 IndentGotoLabels: false
 IndentPPDirectives: None # AfterHash BeforeHash
-
 # IndentRequiresClause: false
-
 IndentWrappedFunctionNames: true
 
 # JavaScriptQuotes: Leave Single Double
 # JavaScriptWrapImports: true
-# InsertBraces: true -> safer to do manually
 
+# InsertBraces: true -> safer to do manually
 InsertNewlineAtEndOfFile: true
 InsertTrailingCommas: None # Wrapped
 
@@ -182,10 +203,13 @@ ReflowComments: true
 SeparateDefinitionBlocks: Always # Never Leave
 ShortNamespaceLines: 0
 SortIncludes: CaseSensitive # CaseInsensitive Never
+
 SpaceAfterCStyleCast: false
 SpaceAfterLogicalNot: false
 SpaceAfterTemplateKeyword: false
+
 SpaceAroundPointerQualifiers: Default # Before After Both
+
 SpaceBeforeAssignmentOperators: true
 SpaceBeforeCaseColon: true
 SpaceBeforeCpp11BracedList: true
@@ -196,8 +220,9 @@ SpaceBeforeParens: ControlStatements # Never ControlStatementsExceptControlMacro
 # SpaceBeforeParensOptions # if custom
 SpaceBeforeRangeBasedForLoopColon: true
 SpaceBeforeSquareBrackets: false
-SpaceInEmptyParentheses: false
 SpacesBeforeTrailingComments: 3
+
+SpaceInEmptyParentheses: false
 SpacesInAngles: false
 SpacesInCStyleCastParentheses: false # deprecated
 SpacesInConditionalStatement: false # deprecated
