@@ -1,5 +1,5 @@
 Language: Cpp
-Standard: c++11
+Standard: Auto
 UseTab: Never
 IndentWidth: 4
 TabWidth: 4
@@ -44,9 +44,9 @@ AlignOperands: Align # DontAlign AlignAfterOperator
 #    Kind: Always Never Leave
 #    OverEmptyLines: 2
 
-# AllowAllArgumentsOnNextLine: true
 # AllowAllConstructorInitializersOnNextLine: true # deprecated, use PackConstructorInitializers
 
+AllowAllArgumentsOnNextLine: true
 AllowAllParametersOfDeclarationOnNextLine: true
 
 # AllowBreakBeforeNoexceptSpecifier: Never OnlyWithParen Always
@@ -108,7 +108,7 @@ ColumnLimit: 150
 # CommentPragmas: '^ IWYU pragma:'
 # CompactNamespaces: false
 
-ConstructorInitializerAllOnOneLineOrOnePerLine: true # deprecated use PackConstructorInitializers
+# ConstructorInitializerAllOnOneLineOrOnePerLine: true # deprecated use PackConstructorInitializers
 # ConstructorInitializerIndentWidth: -4
 
 ContinuationIndentWidth: 4
@@ -120,7 +120,6 @@ DisableFormat: false
 
 EmptyLineAfterAccessModifier: Never # Always Leave
 EmptyLineBeforeAccessModifier: Never # Always Leave
-
 FixNamespaceComments: true
 
 # ForEachMacros: [ foreach, Q_FOREACH, BOOST_FOREACH ]

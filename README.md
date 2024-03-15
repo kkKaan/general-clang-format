@@ -1,16 +1,18 @@
-# A General .clang-format Configuration
+# General .clang-format and .clang-tidy Configurations
 
 This repository contains a .clang-format file, which is used to configure the formatting style for C++ code using the Clang-Format tool. The configuration file specifies various formatting rules and preferences to ensure consistent and readable code across different projects. This file is created as a mixture of settings from various C++ standards, like [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html), and [LLVM Coding Standards](https://llvm.org/docs/CodingStandards.html). 
+
+Furthermore, there is a .clang-tidy file, which is used to configure the static analysis tool for C++ code using the Clang-Tidy tool. The configuration file specifies various static analysis rules and preferences to ensure consistent and readable code across different projects. For now, it contains 'readability-identifier-naming' checks, which are used to enforce the naming conventions for identifiers in the code. For more information about the checks, please refer to the [list of these checks](https://clang.llvm.org/extra/clang-tidy/checks/list.html).
 
 ## Usage
 
 To use this .clang-format configuration file in your C++ project, follow these steps:
 
-1. **Download**: Download the .clang-format file from this repository.
+1. **Download**: Download the .clang-format or .clang-tidy files from this repository.
 
-2. **Integration**: Place the .clang-format file in the root directory of your C++ project.
+2. **Integration**: Place them in the root directory of your C++ project.
 
-3. **Usage**: When running Clang-Format on your C++ code, it will automatically use the formatting rules specified in the .clang-format file placed in the project directory.
+3. **Usage**: When running Clang-Format on your C++ code, it will automatically use the formatting rules specified in the .clang-format file placed in the project directory. For clang-tidy, you can refer to the [Clang-Tidy Documentation](https://clang.llvm.org/extra/clang-tidy/) for more information on how to use it.
 
 ## Configuration Details
 

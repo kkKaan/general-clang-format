@@ -1,0 +1,225 @@
+##### All Naming Options #####
+# lower_case
+# UPPER_CASE
+# camelBack
+# CamelCase
+# camel_Snake_Back
+# Camel_Snake_Case
+# aNy_CasE
+# Leading_upper_snake_case
+##############################
+
+Checks: '-*, readability-identifier-naming'
+CheckOptions:
+  - { key: readability-identifier-naming.AbstractClassCase,                         value: CamelCase }   # Interfaces # 
+  - { key: readability-identifier-naming.AbstractClassPrefix,                       value: I } 
+  # - { key: readability-identifier-naming.AbstractClassSuffix,                     value: _post }
+  # - { key: readability-identifier-naming.AbstractClassHungarianPrefix,            value: On }          ##############
+  - { key: readability-identifier-naming.AggressiveDependentMemberLookup,           value: false }
+  # - { key: readability-identifier-naming.CheckAnonFieldInParent,                  value: true }
+  - { key: readability-identifier-naming.ClassCase,                                 value: CamelCase }   # Classes #
+  # - { key: readability-identifier-naming.ClassPrefix,                             value:  }
+  # - { key: readability-identifier-naming.ClassIgnoredRegexp,                      value:  }
+  # - { key: readability-identifier-naming.ClassSuffix,                             value:  }
+  # - { key: readability-identifier-naming.ClassHungarianPrefix,                    value:  }            ###########
+  - { key: readability-identifier-naming.ClassConstantCase,                         value: camelBack }  # Class Constants #
+  # - { key: readability-identifier-naming.ClassConstantPrefix,                     value:  }
+  # - { key: readability-identifier-naming.ClassConstantIgnoredRegexp,              value:  }
+  # - { key: readability-identifier-naming.ClassConstantSuffix,                     value:  }
+  # - { key: readability-identifier-naming.ClassConstantHungarianPrefix,            value:  }           ###################
+  - { key: readability-identifier-naming.ClassMemberCase,                           value: camelBack }  # Class Members #
+  # - { key: readability-identifier-naming.ClassMemberPrefix,                       value:  }
+  # - { key: readability-identifier-naming.ClassMemberIgnoredRegexp,                value:  }
+  # - { key: readability-identifier-naming.ClassMemberSuffix,                       value:  }
+  # - { key: readability-identifier-naming.ClassMemberHungarianPrefix,              value:  }           #################
+  - { key: readability-identifier-naming.ClassMethodCase,                           value: CamelCase }  # Class Methods #
+  # - { key: readability-identifier-naming.ClassMethodPrefix,                       value:  }
+  # - { key: readability-identifier-naming.ClassMethodIgnoredRegexp,                value:  }
+  # - { key: readability-identifier-naming.ClassMethodSuffix,                       value:  }           #################
+  - { key: readability-identifier-naming.ConstantCase,                              value: camelBack }  # Constants #
+  # - { key: readability-identifier-naming.ConstantPrefix,                          value:  }
+  # - { key: readability-identifier-naming.ConstantIgnoredRegexp,                   value:  }
+  # - { key: readability-identifier-naming.ConstantSuffix,                          value:  }
+  # - { key: readability-identifier-naming.ConstantHungarianPrefix,                 value:  }           #############
+  - { key: readability-identifier-naming.ConstantMemberCase,                        value: camelBack }  # Constant Members #
+  # - { key: readability-identifier-naming.ConstantMemberPrefix,                    value:  }
+  # - { key: readability-identifier-naming.ConstantMemberIgnoredRegexp,             value:  }
+  # - { key: readability-identifier-naming.ConstantMemberSuffix,                    value:  }
+  # - { key: readability-identifier-naming.ConstantMemberHungarianPrefix,           value:  }           ####################
+  - { key: readability-identifier-naming.ConstantParameterCase,                     value: camelBack }  # Constant Parameters #
+  # - { key: readability-identifier-naming.ConstantParameterPrefix,                 value:  }
+  # - { key: readability-identifier-naming.ConstantParameterIgnoredRegexp,          value:  }
+  # - { key: readability-identifier-naming.ConstantParameterSuffix,                 value:  }
+  # - { key: readability-identifier-naming.ConstantParameterHungarianPrefix,        value:  }           #######################
+  - { key: readability-identifier-naming.ConstantPointerParameterCase,              value: camelBack }  # Constant Pointer Parameters #
+  # - { key: readability-identifier-naming.ConstantPointerParameterPrefix,          value:  }
+  # - { key: readability-identifier-naming.ConstantPointerParameterIgnoredRegexp,   value:  }
+  # - { key: readability-identifier-naming.ConstantPointerParameterSuffix,          value:  }
+  # - { key: readability-identifier-naming.ConstantPointerParameterHungarianPrefix, value:  }           ###############################
+  - { key: readability-identifier-naming.ConstexprFunctionCase,                     value: CamelCase }  # Constexpr Functions #
+  # - { key: readability-identifier-naming.ConstexprFunctionPrefix,                 value:  }
+  # - { key: readability-identifier-naming.ConstexprFunctionIgnoredRegexp,          value:  }
+  # - { key: readability-identifier-naming.ConstexprFunctionSuffix,                 value:  }           #######################
+  - { key: readability-identifier-naming.ConstexprMethodCase,                       value: CamelCase }  # Constexpr Methods #
+  # - { key: readability-identifier-naming.ConstexprMethodPrefix,                   value:  }
+  # - { key: readability-identifier-naming.ConstexprMethodIgnoredRegexp,            value:  }
+  # - { key: readability-identifier-naming.ConstexprMethodSuffix,                   value:  }           #####################
+  - { key: readability-identifier-naming.ConstexprVariableCase,                     value: camelBack }  # Constexpr Variables #
+  # - { key: readability-identifier-naming.ConstexprVariablePrefix,                 value:  }
+  # - { key: readability-identifier-naming.ConstexprVariableIgnoredRegexp,          value:  }
+  # - { key: readability-identifier-naming.ConstexprVariableSuffix,                 value:  }           
+  # - { key: readability-identifier-naming.ConstexprVariableHungarianPrefix,        value:  }           #######################
+  - { key: readability-identifier-naming.EnumCase,                                  value: CamelCase }   # Enums #
+  # - { key: readability-identifier-naming.EnumPrefix,                              value:  }
+  # - { key: readability-identifier-naming.EnumIgnoredRegexp,                       value:  }
+  # - { key: readability-identifier-naming.EnumSuffix,                              value:  }            #########
+  - { key: readability-identifier-naming.EnumConstantCase,                          value: CamelCase }  # Enum Constants #
+  # - { key: readability-identifier-naming.EnumConstantPrefix,                      value:  }
+  # - { key: readability-identifier-naming.EnumConstantIgnoredRegexp,               value:  }
+  # - { key: readability-identifier-naming.EnumConstantSuffix,                      value:  }            
+  # - { key: readability-identifier-naming.EnumConstantHungarianPrefix,             value:  }           ##################
+  - { key: readability-identifier-naming.FunctionCase,                              value: CamelCase }   # Functions #
+  # - { key: readability-identifier-naming.FunctionPrefix,                          value:  }
+  # - { key: readability-identifier-naming.FunctionIgnoredRegexp,                   value:  }
+  # - { key: readability-identifier-naming.FunctionSuffix,                          value:  }            #############
+  - { key: readability-identifier-naming.GlobalConstantCase,                        value: CamelCase }  # Global Constants #
+  # - { key: readability-identifier-naming.GlobalConstantPrefix,                    value:  }
+  # - { key: readability-identifier-naming.GlobalConstantIgnoredRegexp,             value:  }
+  # - { key: readability-identifier-naming.GlobalConstantSuffix,                    value:  }            
+  # - { key: readability-identifier-naming.GlobalConstantHungarianPrefix,           value:  }           ####################
+  - { key: readability-identifier-naming.GlobalConstantPointerCase,                 value: CamelCase }  # Global Constant Pointers #
+  # - { key: readability-identifier-naming.GlobalConstantPointerPrefix,             value:  }
+  # - { key: readability-identifier-naming.GlobalConstantPointerIgnoredRegexp,      value:  }
+  # - { key: readability-identifier-naming.GlobalConstantPointerSuffix,             value:  }
+  # - { key: readability-identifier-naming.GlobalConstantPointerHungarianPrefix,    value:  }           ############################
+  - { key: readability-identifier-naming.GlobalFunctionCase,                        value: CamelCase }  # Global Functions #
+  # - { key: readability-identifier-naming.GlobalFunctionPrefix,                    value:  }
+  # - { key: readability-identifier-naming.GlobalFunctionIgnoredRegexp,             value:  }
+  # - { key: readability-identifier-naming.GlobalFunctionSuffix,                    value:  }           ####################
+  - { key: readability-identifier-naming.GlobalPointerCase,                         value: CamelCase }  # Global Pointers #
+  # - { key: readability-identifier-naming.GlobalPointerPrefix,                     value:  }
+  # - { key: readability-identifier-naming.GlobalPointerIgnoredRegexp,              value:  }
+  # - { key: readability-identifier-naming.GlobalPointerSuffix,                     value:  }           
+  # - { key: readability-identifier-naming.GlobalPointerHungarianPrefix,            value:  }           ###################
+  - { key: readability-identifier-naming.GlobalVariableCase,                        value: CamelCase }  # Global Variables #
+  # - { key: readability-identifier-naming.GlobalVariablePrefix,                    value:  }
+  # - { key: readability-identifier-naming.GlobalVariableIgnoredRegexp,             value:  }
+  # - { key: readability-identifier-naming.GlobalVariableSuffix,                    value:  }           
+  # - { key: readability-identifier-naming.GlobalVariableHungarianPrefix,           value:  }           ####################
+  - { key: readability-identifier-naming.IgnoreMainLikeFunctions,                   value: true }
+  - { key: readability-identifier-naming.LocalConstantCase,                         value: camelBack }  # Local Constants #
+  # - { key: readability-identifier-naming.LocalConstantPrefix,                     value:  }
+  # - { key: readability-identifier-naming.LocalConstantIgnoredRegexp,              value:  }
+  # - { key: readability-identifier-naming.LocalConstantSuffix,                     value:  }
+  # - { key: readability-identifier-naming.LocalConstantHungarianPrefix,            value:  }           ###################
+  - { key: readability-identifier-naming.LocalConstantPointerCase,                  value: camelBack }  # Local Constant Pointers #
+  # - { key: readability-identifier-naming.LocalConstantPointerPrefix,              value:  }
+  # - { key: readability-identifier-naming.LocalConstantPointerIgnoredRegexp,       value:  }
+  # - { key: readability-identifier-naming.LocalConstantPointerSuffix,              value:  }
+  # - { key: readability-identifier-naming.LocalConstantPointerHungarianPrefix,     value:  }           ###########################
+  - { key: readability-identifier-naming.LocalPointerCase,                          value: camelBack }  # Local Pointers #
+  # - { key: readability-identifier-naming.LocalPointerPrefix,                      value:  }
+  # - { key: readability-identifier-naming.LocalPointerIgnoredRegexp,               value:  }
+  # - { key: readability-identifier-naming.LocalPointerSuffix,                      value:  }
+  # - { key: readability-identifier-naming.LocalPointerHungarianPrefix,             value:  }           ##################
+  - { key: readability-identifier-naming.LocalVariableCase,                         value: camelBack }  # Local Variables #
+  # - { key: readability-identifier-naming.LocalVariablePrefix,                     value:  }
+  # - { key: readability-identifier-naming.LocalVariableIgnoredRegexp,              value:  }
+  # - { key: readability-identifier-naming.LocalVariableSuffix,                     value:  }
+  # - { key: readability-identifier-naming.LocalVariableHungarianPrefix,            value:  }           ###################
+  - { key: readability-identifier-naming.MacroDefinitionCase,                       value: UPPER_CASE } # Macro Definitions #
+  # - { key: readability-identifier-naming.MacroDefinitionPrefix,                   value:  }
+  # - { key: readability-identifier-naming.MacroDefinitionIgnoredRegexp,            value:  }
+  # - { key: readability-identifier-naming.MacroDefinitionSuffix,                   value:  }           #####################
+  - { key: readability-identifier-naming.MemberCase,                                value: camelBack }  # Members #
+  # - { key: readability-identifier-naming.MemberPrefix,                            value:  }
+  # - { key: readability-identifier-naming.MemberIgnoredRegexp,                     value:  }
+  # - { key: readability-identifier-naming.MemberSuffix,                            value:  }
+  # - { key: readability-identifier-naming.MemberHungarianPrefix,                   value:  }           ###########
+  - { key: readability-identifier-naming.MethodCase,                                value: CamelCase }   # Methods #
+  # - { key: readability-identifier-naming.MethodPrefix,                            value:  }
+  # - { key: readability-identifier-naming.MethodIgnoredRegexp,                     value:  }
+  # - { key: readability-identifier-naming.MethodSuffix,                            value:  }            ###########
+  - { key: readability-identifier-naming.NamespaceCase,                             value: camelBack }  # Namespaces #
+  # - { key: readability-identifier-naming.NamespacePrefix,                         value:  }
+  # - { key: readability-identifier-naming.NamespaceIgnoredRegexp,                  value:  }
+  # - { key: readability-identifier-naming.NamespaceSuffix,                         value:  }           ##############
+  - { key: readability-identifier-naming.ParameterCase,                             value: camelBack }  # Parameters #
+  # - { key: readability-identifier-naming.ParameterPrefix,                         value:  }
+  # - { key: readability-identifier-naming.ParameterIgnoredRegexp,                  value:  }
+  # - { key: readability-identifier-naming.ParameterSuffix,                         value:  }           
+  # - { key: readability-identifier-naming.ParameterHungarianPrefix,                value:  }           ##############
+  - { key: readability-identifier-naming.ParameterPackCase,                         value: camelBack }  # Parameter Packs #
+  # - { key: readability-identifier-naming.ParameterPackPrefix,                     value:  }
+  # - { key: readability-identifier-naming.ParameterPackIgnoredRegexp,              value:  }
+  # - { key: readability-identifier-naming.ParameterPackSuffix,                     value:  }           ###################
+  - { key: readability-identifier-naming.PointerParameterCase,                      value: camelBack }  # Pointer Parameters #
+  # - { key: readability-identifier-naming.PointerParameterPrefix,                  value:  }
+  # - { key: readability-identifier-naming.PointerParameterIgnoredRegexp,           value:  }
+  # - { key: readability-identifier-naming.PointerParameterSuffix,                  value:  }           
+  # - { key: readability-identifier-naming.PointerParameterHungarianPrefix,         value:  }           ######################
+  - { key: readability-identifier-naming.PrivateMemberCase,                         value: camelBack }  # Private Members #
+  # - { key: readability-identifier-naming.PrivateMemberPrefix,                     value:  }
+  # - { key: readability-identifier-naming.PrivateMemberIgnoredRegexp,              value:  }
+  # - { key: readability-identifier-naming.PrivateMemberSuffix,                     value:  }
+  # - { key: readability-identifier-naming.PrivateMemberHungarianPrefix,            value:  }           ###################
+  - { key: readability-identifier-naming.PrivateMethodCase,                         value: CamelCase }   # Private Methods #
+  # - { key: readability-identifier-naming.PrivateMethodPrefix,                     value:  }
+  # - { key: readability-identifier-naming.PrivateMethodIgnoredRegexp,              value:  }
+  # - { key: readability-identifier-naming.PrivateMethodSuffix,                     value:  }            ###################
+  - { key: readability-identifier-naming.ProtectedMemberCase,                       value: camelBack }  # Protected Members #
+  # - { key: readability-identifier-naming.ProtectedMemberPrefix,                   value:  }
+  # - { key: readability-identifier-naming.ProtectedMemberIgnoredRegexp,            value:  }
+  # - { key: readability-identifier-naming.ProtectedMemberSuffix,                   value:  }
+  # - { key: readability-identifier-naming.ProtectedMemberHungarianPrefix,          value:  }           #####################
+  - { key: readability-identifier-naming.ProtectedMethodCase,                       value: CamelCase }   # Protected Methods #
+  # - { key: readability-identifier-naming.ProtectedMethodPrefix,                   value:  }
+  # - { key: readability-identifier-naming.ProtectedMethodIgnoredRegexp,            value:  }
+  # - { key: readability-identifier-naming.ProtectedMethodSuffix,                   value:  }            #####################
+  - { key: readability-identifier-naming.PublicMemberCase,                          value: camelBack }  # Public Members #
+  # - { key: readability-identifier-naming.PublicMemberPrefix,                      value:  }
+  # - { key: readability-identifier-naming.PublicMemberIgnoredRegexp,               value:  }
+  # - { key: readability-identifier-naming.PublicMemberSuffix,                      value:  }
+  # - { key: readability-identifier-naming.PublicMemberHungarianPrefix,             value:  }           ##################
+  - { key: readability-identifier-naming.PublicMethodCase,                          value: CamelCase }   # Public Methods #
+  # - { key: readability-identifier-naming.PublicMethodPrefix,                      value:  }
+  # - { key: readability-identifier-naming.PublicMethodIgnoredRegexp,               value:  }
+  # - { key: readability-identifier-naming.PublicMethodSuffix,                      value:  }            ##################
+  - { key: readability-identifier-naming.StaticConstantCase,                        value: CamelCase }  # Static Constants #
+  # - { key: readability-identifier-naming.StaticConstantPrefix,                    value:  }
+  # - { key: readability-identifier-naming.StaticConstantIgnoredRegexp,             value:  }
+  # - { key: readability-identifier-naming.StaticConstantSuffix,                    value:  }
+  # - { key: readability-identifier-naming.StaticConstantHungarianPrefix,           value:  }           ####################
+  - { key: readability-identifier-naming.StaticVariableCase,                        value: camelBack }  # Static Variables #
+  # - { key: readability-identifier-naming.StaticVariablePrefix,                    value:  }
+  # - { key: readability-identifier-naming.StaticVariableIgnoredRegexp,             value:  }
+  # - { key: readability-identifier-naming.StaticVariableSuffix,                    value:  }
+  # - { key: readability-identifier-naming.StaticVariableHungarianPrefix,           value:  }           ####################
+  - { key: readability-identifier-naming.StructCase,                                value: CamelCase }   # Structs #
+  # - { key: readability-identifier-naming.StructPrefix,                            value:  }
+  # - { key: readability-identifier-naming.StructIgnoredRegexp,                     value:  }
+  # - { key: readability-identifier-naming.StructSuffix,                            value:  }            ###########
+  - { key: readability-identifier-naming.TemplateParameterCase,                     value: CamelCase }  # Template Parameters #
+  # - { key: readability-identifier-naming.TemplateParameterPrefix,                 value:  }
+  # - { key: readability-identifier-naming.TemplateParameterIgnoredRegexp,          value:  }
+  # - { key: readability-identifier-naming.TemplateParameterSuffix,                 value:  }
+  - { key: readability-identifier-naming.TypeAliasCase,                             value: CamelCase }   # Type Aliases #
+  # - { key: readability-identifier-naming.TypeAliasPrefix,                         value:  }
+  # - { key: readability-identifier-naming.TypeAliasIgnoredRegexp,                  value:  }
+  # - { key: readability-identifier-naming.TypeAliasSuffix,                         value:  }            ################
+  - { key: readability-identifier-naming.TypedefCase,                               value: CamelCase }   # Typedefs #
+  # - { key: readability-identifier-naming.TypedefPrefix,                           value:  }
+  # - { key: readability-identifier-naming.TypedefIgnoredRegexp,                    value:  }
+  # - { key: readability-identifier-naming.TypedefSuffix,                           value:  }            ############
+  - { key: readability-identifier-naming.VariableCase,                              value: camelBack }  # Variables #
+  # - { key: readability-identifier-naming.VariablePrefix,                          value:  }
+  # - { key: readability-identifier-naming.VariableIgnoredRegexp,                   value:  }
+  # - { key: readability-identifier-naming.VariableSuffix,                          value:  }
+  # - { key: readability-identifier-naming.VariableHungarianPrefix,                 value:  }           #############
+  - { key: readability-identifier-naming.VirtualMethodCase,                         value: CamelCase }   # Virtual Methods #
+  # - { key: readability-identifier-naming.VirtualMethodPrefix,                     value:  }
+  # - { key: readability-identifier-naming.VirtualMethodIgnoredRegexp,              value:  }
+  # - { key: readability-identifier-naming.VirtualMethodSuffix,                     value:  }            ###################
+
+WarningsAsErrors: '*' # Turn off this line unless you want to treat all warnings as errors
+
