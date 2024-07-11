@@ -151,7 +151,7 @@ IndentWrappedFunctionNames: true
 # JavaScriptWrapImports: true
 
 # InsertBraces: true -> safer to do manually
-InsertNewlineAtEndOfFile: true
+InsertNewlineAtEOF: true
 InsertTrailingCommas: None # Wrapped
 
 # IntegerLiteralSeperator:
