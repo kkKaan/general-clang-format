@@ -1,0 +1,57 @@
+line-length = 110
+indent-width = 4
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".ipynb_checkpoints",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pyenv",
+    ".pytest_cache",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    ".vscode",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "site-packages",
+    "venv",
+]
+
+[format]
+quote-style = "double"              # Google prefers double quotes
+indent-style = "space"              
+skip-magic-trailing-comma = false   # Keep trailing commas (YAPF compatible)
+line-ending = "native"
+docstring-code-format = true        # Format code blocks in docstrings
+
+[lint]
+select = [
+  "E", "F", "I", "UP", "B", "C4", "SIM", "PIE", "TC", "PERF", "RUF100",
+]
+ignore = [
+  "E203",  # whitespace before ':' (Black/ruff-format compatibility)
+]
+
+# Per-file ignores
+[lint.per-file-ignores]
+"__init__.py" = ["F403", "F405"]  # Allow star imports in package init
+
+[lint.pydocstyle]
+convention = "google"
+
+[lint.isort]
+combine-as-imports = true
+force-single-line = false
+split-on-trailing-comma = true
